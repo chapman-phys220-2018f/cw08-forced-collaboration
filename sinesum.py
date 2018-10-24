@@ -15,7 +15,7 @@ import pandas as pd
 
 @np.vectorize
 def Sn(T,t,n):
-    """sumsinefunc(float T,float t,int n): Returns a value computed by a sum of sin functions in accordance with the Fourier series expansion of sign(x)"""
+    """Sn(float T,float t,int n): Returns a value computed by a sum of sin functions in accordance with the Fourier series expansion of sign(x)"""
     if (abs(t) > T/2):
         print("t should be within the range -T/2, T/2")
         pass
@@ -37,19 +37,23 @@ def f(T,t):
     return np.sign(t)
 
 def Snarray(T,n,K = 300):
+    """Snarray(T float, n int, K = 300 int): returns numpy array, Generates an array of values for K values of t in [-T/2,T/2] of the summed sines which approximate sign(x)"""
     Time = np.linspace(-T/2,T/2,K)
     return Sn(T,Time,n)
 
 def farray(T,K = 300):
+    """farray(T float, K = 300 int): returns numpy array of values evaluated by sign(x) for equally spaced K values of x in [-T/2,T/2]"""
     Time = np.linspace(-T/2,T/2,K)
     return f(T,Time)
 
 def timespace(T,K = 300):
+    """timespace(T float, K = 300 int), returns numpy array of K equally spaced values in [-T/2,T/2]"""
     return np.linspace(-T/2,T/2,K)
 
-###
+### DO NOT USE (OUT OF ORDER)
 def buildallplots(alpha):
-    """args: alpha (float),
+    """DON'T DO IT ONLY A PROTOTYPE
+    args: alpha (float),
        returns null
        This is a helper function that takes in a float, alpha,
        and generates a sequence of partial Fourier Sums that approximate the sign function"""
