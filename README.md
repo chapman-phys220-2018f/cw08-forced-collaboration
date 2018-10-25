@@ -2,7 +2,7 @@
 
 # PHYS220/MATH220/CPSC220 CW 8
 
-**Author(s):** Conner Carnahan, Morgan Morganan
+**Author(s):** Conner Carnahan, Morgan Holve
 
 ## Specification
 
@@ -35,9 +35,7 @@ Pro-tip: using git to manage conflicts on Jupyter notebooks is a pain. I recomme
 
 ## Assessment
 
-Analyze in this section what you found useful about this assignment in your own words. Include any lingering questions or comments that you may have. You can use the GitHub web interface to edit this file directly for now.
-
-**CHANGEME**
+This assignment was helpful in the sense that there was actually math involved, so thank you for that. Also, it helped me at least learn the syntax for numpy and get more comfortable working with arrays.
 
 ## Honor Pledge
 
@@ -47,7 +45,7 @@ I pledge that all the work in this repository is my own with only the following 
 * Code borrowed from another source, documented with correct attribution in the code and summarized here.
 
 Signed,
-Conner Carnahan
+Conner Carnahan and  Morgan Holve
 
 
 
